@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>mypage</title>
+<link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
-	<h1>마이페이지</h1>
+<%@ include file="menu.jsp" %>	
 </body>
 </html>

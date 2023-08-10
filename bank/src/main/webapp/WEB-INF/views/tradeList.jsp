@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>tradeList</title>
+<link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
-	<h1>거래내역 페이지</h1>
+<%@ include file="menu.jsp" %>	
 </body>
 </html>

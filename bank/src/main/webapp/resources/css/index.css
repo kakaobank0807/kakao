@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+body{
+	font-family: 'Gothic A1', sans-serif;
+}
+.background{
+	background-color: #FFF176;
+	margin: 0 auto;
+	width: 100%;
+	height: 500px;
+	padding: 100px;
+}
+.h{
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+.t{
+	margin-top: 30px;
+	color: #3E2723;
+}
+button{
+	border: 0;
+	background-color: white;
+	margin-top: 50px;
+	padding: 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: large;
+	font-family: 'Gothic A1', sans-serif;
+}
+.lion-img{
+	width: 30px;
+	height: auto;
+	margin-top: 3px;
+}

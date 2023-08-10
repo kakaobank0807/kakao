@@ -8,4 +8,8 @@ import org.springframework.stereotype.Repository;
 public class MembersDAO {
 	@Autowired
 	private SqlSession sqlSession;
+
+	public MembersDTO login(MembersDTO dto) {
+		return sqlSession.selectOne("login.login", dto);
+	}
 }

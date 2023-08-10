@@ -1,8 +1,16 @@
 package com.bank.members;
 
 public class MembersDTO {
-	private int mno, mgrade, mmoney;
+	private int mno, mgrade, mmoney, count;
 	private String mid, mpw, mname, maccount, mapw;
+	
+	
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
 	public int getMno() {
 		return mno;
 	}

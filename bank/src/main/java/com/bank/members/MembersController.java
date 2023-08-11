@@ -51,10 +51,4 @@ public class MembersController {
 		session.invalidate();
 		return "redirect:index";
 	}
-	
-	
-	@GetMapping("/join")
-	public String join() {
-		return "join";
-	}
 }

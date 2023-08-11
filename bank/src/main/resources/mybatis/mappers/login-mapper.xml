@@ -6,4 +6,19 @@
 	<select id="login" parameterType="MembersDTO" resultType="MembersDTO">
 		SELECT mname, COUNT(*) AS 'count' FROM members WHERE mid=#{mid} AND mpw=#{mpw}
 	</select>
+	
+	<select id="mypage" resultType="MembersDTO">
+	SELECT * FROM members WHERE mid = #{mid}
+	</select>
+	
+	<insert id="join" parameterType="com.bank.join.JoinDTO">
+      INSERT INTO members (mid, mpw, mname, mbirth, maddr, mgender, mapw, maccount)
+      VALUES (#{mid}, #{mpw }, #{mname }, #{mbirth}, #{maddr}, #{mgender}, #{mapw}, #{maccount} )
+   </insert>
+   
+   <select id="checkID" parameterType="String" resultType="Integer">
+		SELECT COUNT(*) 
+		FROM members
+		WHERE mid = #{mid}
+	</select>
 </mapper>
